@@ -48,7 +48,7 @@ body {
      font-size: 12px;
      line-height: 1.4;
      background: #f0efef;
-     font-family:Helvetica, Arial, sans-serif;
+     font-family:open-sans,Helvetica, Arial, sans-serif;
 }
 
 @import url(<link rel="stylesheet" href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans">)
@@ -68,7 +68,6 @@ body {
   width: 960px;
   margin: auto;
   text-align: center;
-  padding-top: 20px;
 }
 
 header {
@@ -154,13 +153,16 @@ li a {
   font-weight:300;
   text-align: left;
   float: left;
+  border-top: solid;
+  border-bottom: solid;
 }
 
 
-  /*.readMore{
+.readMore{
     text-align: right;
 
-  }*/
+
+  }
 
 h2{
   color:#033048;
@@ -178,29 +180,29 @@ a{
 
 .sidebarParagraph{
   text-align: left;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .sidebarParagraph a{
   text-align: left;
 }
 
-p:first-child:first-letter{
+p:first-letter{
+  color: #121212;
   font-size: 75px;
   line-height: 60px;
-  font-family: Open-sans;
   padding-top:4px;
   padding-right:8px;
-  padding-left: 3px; 
+  padding-left: 3px;
+  font:open-sans; 
 }
-
-
-
-
 
 footer {
   background: #121212;
   clear: both;
-
+  /*margin-top: 70px;*/
 }
 
 .yellowBackground{
