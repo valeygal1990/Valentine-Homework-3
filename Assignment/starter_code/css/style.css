@@ -48,7 +48,7 @@ body {
      font-size: 12px;
      line-height: 1.4;
      background: #f0efef;
-     font-family:Helvetica, Arial, sans-serif;
+     font-family:open-sans,Helvetica, Arial, sans-serif;
 }
 
 @import url(<link rel="stylesheet" href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans">)
@@ -112,8 +112,10 @@ aside{
 }
 
 h4{
+  color:#033048; 
   font-size:32px;
   font-weight: 800;
+  text-align: left;
 }
 
 .sidebarList{
@@ -140,6 +142,7 @@ li a {
 .firstSection{
   font-size: 24px;
   font-weight:300;
+  text-align: left;
   float: left;
 
 }
@@ -148,15 +151,21 @@ li a {
 .secondSection{
   font-size: 24px;
   font-weight:300;
+  text-align: left;
   float: left;
+  border-top: solid;
+  border-bottom: solid;
 }
 
-  .readMore{
+
+.readMore{
     text-align: right;
+
 
   }
 
 h2{
+  color:#033048;
   font-size: 40px;
   font-weight: 600;
 }
@@ -169,29 +178,57 @@ a{
   text-align: right;
 }
 
+.sidebarParagraph{
+  text-align: left;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 300;
+}
 
+.sidebarParagraph a{
+  text-align: left;
+}
 
+p:first-letter{
+  color: #121212;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top:4px;
+  padding-right:8px;
+  padding-left: 3px;
+  font:open+sans; 
+}
 
 footer {
   background: #121212;
   clear: both;
-
+  /*margin-top: 70px;*/
 }
 
 .yellowBackground{
   background: #f9e42e;
-  /*height: 50px;*/
+  height: 50px;
+  padding: 10px;
 
 }
 
 .signUp{
   text-align: center;
+  padding: 5px;
   background-color: #033048;
   color: white;
   text-decoration: none;
-  width: 30px;
+  width: 40px;
+  display: inline;
+}
+/*I tried to use the pseudo class but it wouldn't work
+and it was really late to ask*/
+.signUp:hover:after{
+  background: #66ff66;
 
 }
+
+
 
 .twitter{
   margin-right: 10px;
@@ -214,6 +251,7 @@ footer {
   font-size: 9px;
   color:white;
   padding: 15px;
+
 }
 
 
