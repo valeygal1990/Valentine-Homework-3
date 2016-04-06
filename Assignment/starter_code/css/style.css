@@ -48,9 +48,10 @@ body {
      font-size: 12px;
      line-height: 1.4;
      background: #f0efef;
+     /*Double check the way that you call the font here.  I think it's "Open Sans"*/
      font-family:open-sans,Helvetica, Arial, sans-serif;
 }
-
+/*You don't need this line because you have the one in the HTML*/
 @import url(<link rel="stylesheet" href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans">)
 
 
@@ -188,7 +189,7 @@ a{
 .sidebarParagraph a{
   text-align: left;
 }
-
+/*Be careful on this one because this make the first letter of every paragraph a drop case when you only wanted it twice*/
 p:first-letter{
   color: #121212;
   font-size: 75px;
@@ -223,6 +224,7 @@ footer {
 }
 /*I tried to use the pseudo class but it wouldn't work
 and it was really late to ask*/
+/*You don't need the after and all of the links should have the hover on them*/
 .signUp:hover:after{
   background: #66ff66;
 
